@@ -1,0 +1,360 @@
+:root {
+	--textStyle: 'Roboto';
+	--titleStyle: 'Chivo';
+	--fontSize: 1.05em;
+	--maxWidth: 68rem;
+	--menuWidth: 21rem;
+}
+
+/* Charte claire — slate / bleu institutionnel */
+html[data-theme='light'] {
+	--homeBG: #dbeafe;
+
+	--linkColor: #1d4ed8;
+
+	--btnBG: #2563eb;
+
+	--borderColor: #e2e8f0;
+
+	--toolboxBG: #f1f5f9;
+	--toolboxFG: #334155;
+	--toolboxActiveBG: #dbeafe;
+	--toolboxActiveFG: #1e3a8a;
+
+	--contentBG: #f8fafc;
+	--contentFG: #1e293b;
+	--contentLightFG: #64748b;
+
+	--accentDarkBG: #2563eb;
+	--accentDarkFG: #ffffff;
+	--accentLightBG: #eff6ff;
+	--accentLightFG: #1e3a8a;
+
+	--pBkText: #5b21b6;
+	--pBkTextLight: #ede9fe;
+	--pBkDemo: #1e40af;
+	--pBkDemoLight: #dbeafe;
+	--pBkExpression: #1e40af;
+	--pBkExpressionLight: #dbeafe;
+	--pBkWarning: #b91c1c;
+	--pBkWarningLight: #fee2e2;
+	--pBkComplement: #a16207;
+	--pBkComplementLight: #fef9c3;
+
+	--headerBG: #ffffff;
+	--headerFG: #0f172a;
+	--headerLink: var(--linkColor);
+
+	--footerBG: #f8fafc;
+	--footerFG: #475569;
+
+	--schBG: #f8fafc;
+	--schLightBG: #dbeafe;
+	--schCurrentBG: #fde68a;
+	--schFG: #1e293b;
+
+	--quizAnswerBG: #dbeafe;
+	--quizAnswerFG: #1e3a8a;
+	--quizWorstFG: #b91c1c;
+	--quizWorstBG: #fee2e2;
+	--quizBadFG: #b45309;
+	--quizSolFG: #1d4ed8;
+	--quizSolBG: #e0f2fe;
+	--quizExplainBG: #fefce8;
+	--quizExplainFG: #713f12;
+
+	--segmentUndone: #dbeafe;
+	--segmentDone: #475569;
+	--segmentActive: #2563eb;
+
+	--inputBG: #f1f5f9;
+	--inputBorder: #cbd5e1;
+	--inputFocus: #2563eb;
+
+	--progressFG: #2563eb;
+
+	--helpColor: #475569;
+}
+
+html[data-theme='dark'] {
+	--homeBG: #1e3a8a;
+
+	--linkColor: #93c5fd;
+
+	--btnBG: #3b82f6;
+
+	--borderColor: #334155;
+
+	--toolboxBG: #1e293b;
+	--toolboxFG: #e2e8f0;
+	--toolboxActiveBG: #1e40af;
+	--toolboxActiveFG: #dbeafe;
+
+	--contentBG: #0f172a;
+	--contentFG: #e2e8f0;
+	--contentLightFG: #94a3b8;
+
+	--accentDarkBG: #3b82f6;
+	--accentDarkFG: #f8fafc;
+	--accentLightBG: #1e293b;
+	--accentLightFG: #f8fafc;
+
+	--pBkText: #c4b5fd;
+	--pBkTextLight: #3b2d6d;
+	--pBkDemo: #bfdbfe;
+	--pBkDemoLight: #1e3a8a;
+	--pBkExpression: #bfdbfe;
+	--pBkExpressionLight: #1e3a8a;
+	--pBkWarning: #fecaca;
+	--pBkWarningLight: #991b1b;
+	--pBkComplement: #fef08a;
+	--pBkComplementLight: #854d0e;
+
+	--headerBG: #1e293b;
+	--headerFG: #f1f5f9;
+	--headerLink: var(--linkColor);
+
+	--footerBG: #1e293b;
+	--footerFG: #cbd5e1;
+
+	--schBG: #1e293b;
+	--schLightBG: #1e40af;
+	--schCurrentBG: #854d0e;
+	--schFG: #e2e8f0;
+
+	--quizAnswerBG: #1e3a8a;
+	--quizAnswerFG: #bfdbfe;
+	--quizWorstFG: #fca5a5;
+	--quizWorstBG: #450a0a;
+	--quizBadFG: #fdba74;
+	--quizSolFG: #dbeafe;
+	--quizSolBG: #172554;
+	--quizExplainBG: #422006;
+	--quizExplainFG: #fde68a;
+
+	--segmentUndone: #475569;
+	--segmentDone: #f8fafc;
+	--segmentActive: #60a5fa;
+
+	--inputBG: #334155;
+	--inputBorder: #64748b;
+	--inputFocus: #60a5fa;
+
+	--progressFG: #60a5fa;
+
+	--helpColor: #cbd5e1;
+}
+
+/* Finitions — lisibilité, hiérarchie, navigation */
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+p {
+	line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	letter-spacing: -0.02em;
+}
+
+.default #header,
+.sco #header {
+	box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+}
+
+html[data-theme='dark'] .default #header,
+html[data-theme='dark'] .sco #header {
+	box-shadow: 0 1px 0 rgba(148, 163, 184, 0.12);
+}
+
+.default #toolbox {
+	box-shadow: 2px 0 12px -4px rgba(15, 23, 42, 0.08);
+}
+
+html[data-theme='dark'] .default #toolbox {
+	box-shadow: 2px 0 16px -4px rgba(0, 0, 0, 0.35);
+}
+
+.default #navigation a.btnNav {
+	box-shadow: 0 4px 14px -4px rgba(15, 23, 42, 0.12);
+	transition:
+		transform 0.18s ease,
+		box-shadow 0.18s ease,
+		filter 0.18s ease;
+}
+
+.default #navigation a.btnNav:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 8px 22px -6px rgba(15, 23, 42, 0.16);
+	filter: none;
+	opacity: 1;
+}
+
+.home #navigation a {
+	box-shadow: 0 6px 20px -8px rgba(15, 23, 42, 0.2);
+	font-weight: 600;
+	transition:
+		transform 0.18s ease,
+		box-shadow 0.18s ease,
+		opacity 0.18s ease;
+}
+
+.home #navigation a:hover {
+	opacity: 1;
+	transform: translateY(-2px);
+	box-shadow: 0 10px 28px -10px rgba(15, 23, 42, 0.25);
+}
+
+html[data-theme='dark'] .home #navigation a {
+	box-shadow: 0 6px 24px -6px rgba(0, 0, 0, 0.45);
+}
+
+.default #menu .mnu .lbl,
+.default #content ul.plan a.item {
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.default .scroller {
+	padding-block: 2.25em 5.5em;
+}
+
+/* Page d’accueil — alignée sur la maquette rnfc.png */
+.home .homeSrOnly {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+.home.homeMockup #root:before {
+	transform: none;
+	background: #ffffff;
+	background-image: none;
+}
+
+body.home.homeMockup,
+.home.homeMockup #root,
+.home.homeMockup #main,
+.home.homeMockup #content {
+	background-color: #ffffff;
+}
+
+.home.homeMockup #header {
+	background-color: #ffffff;
+	border-block-end-color: rgba(30, 58, 95, 0.12);
+}
+
+.home #root {
+	justify-content: flex-start;
+}
+
+.home #document {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 100%;
+	flex: 1;
+	min-height: 0;
+}
+
+.home #main {
+	min-height: 0;
+	overflow-y: auto;
+}
+
+.home #content,
+.home #navigation {
+	width: 100%;
+	max-width: none;
+	flex: 0 0 auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.home #content {
+	padding-inline: 0;
+}
+
+.home #content::before,
+.home #navigation::before,
+.home #content::after,
+.home #navigation::after {
+	content: none;
+	flex: unset;
+	display: none;
+}
+
+.home.homeMockup section.article {
+	width: 100%;
+	max-width: none;
+	margin-inline: 0;
+	margin-block-end: 0;
+	padding-block: clamp(0.75rem, 2vw, 1.5rem);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.home .homeHeroWrap {
+	position: relative;
+	width: 100%;
+	max-width: 1013px;
+	margin-inline: auto;
+	line-height: 0;
+}
+
+/* Couverture entière = lien réel (clics fiables dans tous les navigateurs) */
+.home .homeCoverLink {
+	display: block;
+	line-height: 0;
+	text-decoration: none;
+	outline: none;
+}
+
+.home .homeCoverLink:focus-visible {
+	outline: 3px solid #1e3a5f;
+	outline-offset: 4px;
+}
+
+.home .homeHeroWrap img,
+.home .homeHeroWrap .homeHeroImg {
+	display: block;
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+/* Doublon navigation SCENARI : hors écran mais lien conservé pour compatibilité */
+.home.homeMockup #navigation nav.pageTurner {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+
+.home.homeMockup #footer {
+	background-color: #ffffff;
+	border-block-start: none;
+}
+
+@media (max-width: 850px) {
+	.home.homeMockup #root:before {
+		background: #ffffff;
+		background-image: none;
+	}
+}
