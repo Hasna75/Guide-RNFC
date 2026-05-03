@@ -4,7 +4,7 @@
 html {
 	font-size: var(--fontSize);
 	font-family: var(--textStyle);
-	font-weight: 300;
+	font-weight: 420;
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
@@ -117,7 +117,7 @@ div.scroller {
 	margin: 0;
 	text-align: start;
 	font-size: clamp(1rem, 2vw, 1.2rem);
-	font-weight: 300;
+	font-weight: 500;
 	font-family: var(--textStyle);
 	min-width: 0;
 	line-height: 45px;
@@ -234,7 +234,7 @@ div.scroller {
 	display: flex;
 	flex-flow: column;
 	font-family: var(--titleStyle);
-	font-weight: 300;
+	font-weight: 450;
 	order: 2;
 	overflow-y: auto;
 }
@@ -4144,7 +4144,7 @@ a.btnSort_down::before {
 	color: var(--contentLightFG);
 	margin-block:15px 5px;
 	margin-inline:0;
-	font-weight: 300;
+	font-weight: 450;
 }
 
 /* --- TAT ------------------------------------------------------- */

@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ar" xml:lang="ar" dir="rtl" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<title>Guide d’exploitation de la plate-forme RNFC</title>
+	<title>دليل استغلال منصة RNFC — المرجع الوطني للتكوينات والكفاءات</title>
 	<meta charset="UTF-8">
 	</meta>
-	<meta name="generator" content="SCENARI 6.4.5 / OpaleExtEmeraude 25.1.1">
+	<meta name="generator" content="SCENARI 6.4.5 / OpaleExtEmeraude 25.1.2">
 	</meta>
-	<meta name="revision" content="2026-04-28 03:32">
+	<meta name="revision" content="2026-05-03">
 	</meta>
-	<meta name="author" content="DAMERDJI Hasna
-">
+	<meta name="author" content="DAMERDJI Hasna">
 	</meta>
 	<meta name="keywords" content="">
 	</meta>
-	<meta name="date" content="28/04/2026">
+	<meta name="date" content="03/05/2026">
 	</meta>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</meta>
 	<script>/*<![CDATA[*/
-/*0*/ var scServices = { id: "moi2luph" };
-/*1*/ window.scLoadParams = { destUri: "/co/rnfc.html", pathToRoot: "../" };
+/*0*/ var scServices = { id: "mopz4phu" };
+/*1*/ window.scLoadParams = { destUri: "/co_ar/rnfc.html", pathToRoot: "../" };
 		/*]]>*/</script>
 	<script src="../lib-sc/scCoLib.js"></script>
 	<script src="../lib-sc/scSiLib.js"></script>
@@ -55,8 +54,8 @@
 		<header id="header">
 			<nav>
 				<ul id="accessibility">
-					<li class="waiContent"><a href="#content"><span>contenu</span></a></li>
-					<li class="waiNav"><a href="#navigation"><span>navigation</span></a></li>
+					<li class="waiContent"><a href="#content"><span>محتوى</span></a></li>
+					<li class="waiNav"><a href="#navigation"><span>تصفح</span></a></li>
 				</ul>
 			</nav>
 			<div id="tools" tabindex="-1">
@@ -106,6 +105,26 @@
 					}
 				}
 
+				.lang-switch {
+					text-align: center;
+					padding: 0.75rem 1rem 0;
+					font-size: 0.95rem;
+				}
+
+				.lang-switch a {
+					color: #4f46e5;
+					text-decoration: none;
+					font-weight: 600;
+				}
+
+				.lang-switch a:hover {
+					text-decoration: underline;
+				}
+
+				[data-theme='dark'] .lang-switch a {
+					color: #818cf8;
+				}
+
 				.home-hero-section {
 					display: flex;
 					flex-direction: column;
@@ -152,7 +171,7 @@
 					font-size: clamp(2.5rem, 5vw, 4rem);
 					font-weight: 800;
 					letter-spacing: -0.025em;
-					line-height: 1.1;
+					line-height: 1.25;
 					margin-bottom: 1.5rem;
 					background: linear-gradient(135deg, #1e1b4b 0%, #4f46e5 50%, #0ea5e9 100%);
 					-webkit-background-clip: text;
@@ -171,7 +190,7 @@
 					color: #475569;
 					max-width: 650px;
 					margin: 0 auto 1.5rem auto;
-					line-height: 1.7;
+					line-height: 1.8;
 				}
 
 				[data-theme='dark'] .hero-subtitle {
@@ -228,10 +247,11 @@
 
 				.cta-btn svg {
 					transition: transform 0.3s ease;
+					transform: scaleX(-1);
 				}
 
 				.cta-btn:hover svg {
-					transform: translateX(5px);
+					transform: scaleX(-1) translateX(5px);
 				}
 
 				.badges-row {
@@ -260,50 +280,29 @@
 					color: #cbd5e1;
 					border-color: rgba(255, 255, 255, 0.1);
 				}
-
-				.lang-switch {
-					text-align: center;
-					padding: 0.75rem 1rem 0;
-					font-size: 0.95rem;
-				}
-
-				.lang-switch a {
-					color: #4f46e5;
-					text-decoration: none;
-					font-weight: 600;
-				}
-
-				.lang-switch a:hover {
-					text-decoration: underline;
-				}
-
-				[data-theme='dark'] .lang-switch a {
-					color: #818cf8;
-				}
 			</style>
 
-			<p class="lang-switch" lang="ar" dir="rtl"><a href="../co_ar/rnfc.html">العربية</a></p>
+			<p class="lang-switch" lang="fr" dir="ltr"><a href="../co/rnfc.html">Français</a></p>
 
 			<div id="document">
 				<div style="width: 100%; text-align: center; padding-top: 0.5rem;">
-					<img src="../res/mfep2.jpg" alt="Bannière Ministère"
+					<img src="../res/mfep2.jpg" alt="شعار الوزارة"
 						style="max-width: 100%; max-height: 80px; width: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
 				</div>
 				<section class="home-hero-section">
 					<div class="glass-card">
 						<div class="hero-img-container">
-							<a href="rnfc_1.html" target="_self" rel="next" aria-label="Démarrer">
-								<img src="../res/rnfc.png" alt="Interface de la plateforme RNFC" loading="lazy">
+							<a href="rnfc_1.html" target="_self" rel="next" aria-label="ابدأ">
+								<img src="../res/rnfc.png" alt="واجهة منصة RNFC" loading="lazy">
 							</a>
 						</div>
 
-						<h1 class="hero-title">Guide d'Exploitation de la Plate-forme RNFC</h1>
-						<p class="hero-subtitle">Le Référentiel National des Formations et Compétences. Découvrez un
-							outil institutionnel stratégique alignant la formation professionnelle sur les besoins réels
-							du marché de l'emploi.</p>
+						<h1 class="hero-title">دليل استغلال منصة RNFC</h1>
+						<p class="hero-subtitle">المرجع الوطني للتكوينات والكفاءات: أداة مؤسساتية استراتيجية لمواءمة
+							التكوين المهني مع احتياجات سوق الشغل الفعلية.</p>
 
 						<a href="rnfc_1.html" target="_self" rel="next" class="cta-btn">
-							Démarrer
+							ابدأ
 							<svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
 									d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
@@ -316,7 +315,7 @@
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 										d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
 								</svg>
-								Version 1.0
+								الإصدار 1.0
 							</div>
 							<div class="badge">
 								<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -324,7 +323,7 @@
 										d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
 									</path>
 								</svg>
-								28 Avril 2026
+								28 أبريل 2026
 							</div>
 							<div class="badge">
 								<svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -332,7 +331,7 @@
 										d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
 									</path>
 								</svg>
-								Guide complet
+								دليل كامل
 							</div>
 						</div>
 					</div>
@@ -343,7 +342,7 @@
 			<hr class="hidden">
 			</hr>
 			<menu></menu><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale"
-				title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)"
+				title="تم إنشاؤه باستخدام SCENARI (نافذة جديدة)"><span><img alt="تم إنجازه بواسطة سيناري (نافذة جديدة)"
 						src="../skin/img/tpl/scBtn.png"></img></span></a>
 		</footer>
 	</div>
